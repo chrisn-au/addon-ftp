@@ -257,6 +257,14 @@ HaveIBeenPwned password requirement by setting it to `true`.
 **Note**: _We STRONGLY suggest picking a stronger/safer password instead of
 using this option! USE AT YOUR OWN RISK!_
 
+## Accessing files in HASSIO and other addons.
+
+With the default options you will only have access to files written to the FTP server via FTP. To access the files locally within HASSIO or other addons (Node Red as an example) enable the Sub Option: "share", "backup" or "config". This will enable youre ftp client device to save files to these directories. For instance IP Cameras that use FTP can save files to /share/camera and these files can be easily accessed by other HASSIO addons (like node red)
+
+## File persistence
+
+With the default setiings and files not saved to the share, backup, config will be deleted on the addon restart. If this is not desirable then by saving files to share,config or backup will eliviate this issue
+
 ## Changelog & Releases
 
 This repository keeps a change log using [GitHub's releases][releases]
